@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html>
-<body>
-
-<form onsubmit="return false" oninput="x.value = parseInt(fname.value)">
-  Numero: <input type="number" name="fname">
-Sucesion:<output name="x"></output>
+<form action="{{ url_for('handle_data') }}" method="post">
+    <input type="text" name="projectFilepath">
+    <input type="submit">
 </form>
-
-<p><strong>Note:</strong> The output element is not supported in Edge 12 or Internet Explorer and earlier versions.</p>
-
-</body>
-</html>
 
