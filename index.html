@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Mauricio</title>
-</head>
 <body>
 
-<form action="/action_page.php" method="get" id="nameform">
+<form onsubmit="return false" oninput="x.value = parseInt(fname.value)">
   Numero: <input type="number" name="fname">
-  Sucesion: <output name="x" value="fname" </output>
- </form>
+Sucesion:<output name="x"></output>
+</form>
 
-<p>The button below is outside the form element, but still part of the form.</p>
-
-<button type="submit" form="nameform" value="Submit">Submit</button>
-
-<p><b>Note:</b> The form attribute does not work in IE.</p>
+<p><strong>Note:</strong> The output element is not supported in Edge 12 or Internet Explorer and earlier versions.</p>
 
 </body>
 </html>
+
